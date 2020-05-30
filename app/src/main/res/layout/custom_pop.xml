@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <TextView
+            android:id="@+id/tvTitlePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/bold_text"
+            android:gravity="center"
+            android:text="Warning!"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_normal" />
+
+    <View
+            android:id="@+id/ivDividerPopUp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/separator"
+            android:visibility="gone" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dip"
+            android:layout_marginBottom="10dip"
+            android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:id="@+id/tvMessagePopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold_text"
+                    android:gravity="center"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="@color/separator"
+            android:visibility="visible" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center|bottom">
+
+        <Button
+                android:id="@+id/btnYesPopup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/bold_text"
+                android:text="Ok"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_normal" />
+
+        <View
+                android:id="@+id/view_middle"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/separator" />
+
+        <Button
+                android:id="@+id/btnNoPopup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:fontFamily="@font/bold_text"
+                android:text="NO"
+                android:textAllCaps="true"
+                android:textColor="#7b7b7b"
+                android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+</LinearLayout>

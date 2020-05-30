@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10"
+                android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <EditText
+                            android:id="@+id/note_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:focusable="true"
+                            android:fontFamily="@font/regular_text"
+                            android:textColor="@color/blue"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:textSize="@dimen/text_size_large" />
+
+                    <ImageView
+                            android:id="@+id/note_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:fitsSystemWindows="true" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:id="@+id/signature_pad_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:background="@color/transparent"
+                        android:orientation="vertical"
+                        android:visibility="gone" />
+
+                <ImageView
+                        android:id="@+id/note_sign_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:adjustViewBounds="true"
+                        android:fitsSystemWindows="true"
+                        android:visibility="gone" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+        <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/swipe_anim"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/bottom_layout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:tag="0"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="swipe.json"
+                app:lottie_loop="true" />
+
+        <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/yellow_border"
+                android:gravity="center|end"
+                android:layoutAnimation="@anim/rc_layout_animation"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+            <ImageView
+                    android:id="@+id/add_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_attachment" />
+
+            <ImageView
+                    android:id="@+id/add_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8"
+                    android:gravity="center"
+                    android:src="@drawable/ic_text"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/blue" />
+
+            <ImageView
+                    android:id="@+id/add_paint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_draw" />
+
+            <ImageView
+                    android:id="@+id/add_erase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_8"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_erase"
+                    android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

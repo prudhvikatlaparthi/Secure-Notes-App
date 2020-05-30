@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="preferences_file">com.pru.notes.my_preferences</string>
+    <string name="pin_number">com.pru.notes.my_preferences.pin</string>
+    <string name="is_pin_enabled">com.pru.notes.my_preferences.is_pin_enabled</string>
+    <string name="time_millis">com.pru.notes.my_preferences.time_millis</string>
+</resources>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/touch_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical">
+
+    <ImageView
+            android:id="@+id/pin_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/margin_10"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/ic_back" />
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/margin_10"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_notes" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pin_back"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/user_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:fontFamily="@font/bold_text"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/text_size_normal" />
+
+        <com.pru.notes.custom_views.security.SecureDigitViews
+                android:id="@+id/secure_digits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:gravity="center_horizontal"
+                app:count="4"
+                app:default_text="x" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/bn_submit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/margin_10"
+                    android:background="@drawable/yellow_border"
+                    android:fontFamily="@font/regular_text"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Submit"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                    android:id="@+id/bn_clear"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/bordered"
+                    android:fontFamily="@font/regular_text"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:text="Clear"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="background.json"
+            app:lottie_loop="true"
+            app:lottie_speed="2" />
+
+</RelativeLayout>

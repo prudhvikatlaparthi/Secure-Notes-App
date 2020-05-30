@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:layout_height="wrap_content">
+
+    <EditText
+            android:id="@+id/edit_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:fontFamily="@font/bold_text"
+            android:gravity="center"
+            android:hint="0"
+            android:background="@drawable/circle"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/blue"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>

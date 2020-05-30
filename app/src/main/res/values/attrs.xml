@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SecureDigitViews">
+        <attr name="count" format="integer" />
+        <attr name="digit_color" format="color" />
+        <attr name="default_text" format="string" />
+    </declare-styleable>
+
+
+</resources>

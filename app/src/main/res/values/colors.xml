@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="colorAccent">@color/yellow</color>
+    <color name="yellow">#FFC303</color>
+    <color name="alpha_yellow">#7FFFC303</color>
+    <color name="blue">#222B4C</color>
+    <color name="red">#CD5050</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white">#33ffffff</color>
+    <color name="light_blue">#C2EBF8</color>
+    <color name="separator">#DFDFDF</color>
+</resources>
